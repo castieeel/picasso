@@ -19,7 +19,7 @@ export const Main: React.FC = () => {
     void fetchData({ start }).unwrap().then((posts) => {
       if (posts != null) {
         setRecords([...records, ...posts])
-        setStart(start + 10)
+        setStart(start + 10) // 10 лимитных записей
         setHasMore(posts.length > 0)
       }
     })
