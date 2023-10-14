@@ -1,4 +1,4 @@
-Тестовое задание для ПИКАССО
+# Тестовое задание для ПИКАССО
 
 # Getting Started with Create React App
 
