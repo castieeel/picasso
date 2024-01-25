@@ -1,9 +1,9 @@
 import React from 'react'
 import { type iPost } from '../models'
 import { useNavigate } from 'react-router'
-import * as S from '../styled components/post.style'
 import { useDispatch } from 'react-redux'
 import { setPostBody, setPostId, setPostTitle } from '../store/slices/slicePost'
+import * as S from '../styled components/post.style'
 
 interface iProps {
   post: iPost

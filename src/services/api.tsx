@@ -8,14 +8,9 @@ export const typicodeApi = createApi({
   }),
   refetchOnFocus: true,
   endpoints: (builder) => ({
-    getPosts: builder.query <iPost[], { start: number }>({
-      query: ({ start }) => ({
-        url: '/posts',
-        params:
-        {
-          _limit: 10,
-          _start: start
-        }
+    getPosts: builder.query <iPost[], null>({
+      query: () => ({
+        url: '/posts'
       })
     }),
     getComments: builder.query <iComments[], number >({
@@ -31,4 +26,4 @@ export const typicodeApi = createApi({
   })
 })
 
-export const { useGetCommentsQuery, useGetUserQuery, useLazyGetPostsQuery } = typicodeApi
+export const { useGetCommentsQuery, useGetUserQuery, useGetPostsQuery } = typicodeApi

@@ -6,8 +6,4 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}`
+`
